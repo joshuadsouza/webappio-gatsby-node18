@@ -7,6 +7,10 @@ COPY . .
 RUN npm install
 RUN npm install -g gatsby-cli
 
-# Expose the port
-CMD ["npm", "run", "start"]
-EXPOSE 8000
+RUN gatsby build
+
+RUN npm install --global serve
+
+CMD serve /usr/src/app/public
+
+EXPOSE 3000

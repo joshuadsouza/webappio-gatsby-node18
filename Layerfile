@@ -16,4 +16,4 @@ COPY . .
 RUN docker build -t image .
 RUN BACKGROUND docker run image
 
-EXPOSE WEBSITE http://localhost:8000
+EXPOSE WEBSITE http://localhost:3000
