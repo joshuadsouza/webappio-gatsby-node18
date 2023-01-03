@@ -8,5 +8,5 @@ RUN npm install
 RUN npm install -g gatsby-cli
 
 # Expose the port
-EXPOSE 8000
 CMD ["npm", "run", "start"]
+EXPOSE 8000
